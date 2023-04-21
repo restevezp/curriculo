@@ -1,0 +1,103 @@
+// Estilos para la estructura general de la página
+.container {
+    margin-top: 50px;
+}
+
+.separator {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 2px solid $secondary-color;
+}
+
+.personal-info-col {
+    @include flex(center, flex-start, column);
+}
+
+.profesional-info-col {
+    padding-left: 50px;
+}
+
+// Estilos para la sección de información personal
+.profile-pic-row {
+    @include flex(center, center, column);
+    margin-top: 30px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.personal-skills-row ul,
+.languages-row ul {
+    margin-bottom: 20px;
+}
+
+.languages-row li:before {
+    content: "\f1ab";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: $primary-color;
+}
+
+.personal-skills-row li:before {
+    content: "\f3fd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: $primary-color;
+}
+
+// Estilos para la sección de habilidades
+.skills-list ul {
+    li {
+        .progress {
+            height: 20px;
+            margin-top: 7px;
+        }
+
+        .progress-bar {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+}
+
+// Media queries
+@media (max-width: 768px) {
+    .personal-info-col {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .profesional-info-col {
+        padding-left: 0;
+    }
+
+    .profile-pic-row {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .languages-row,
+    .personal-skills-row {
+        text-align: center;
+    }
+
+    .timeline-row {
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 30px;
+
+            &:before {
+                left: -2px;
+            }
+        }
+    }
+}

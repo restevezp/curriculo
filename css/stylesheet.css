@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0; }
+
+.left-column {
+  width: 30%;
+  background-color: #ccc;
+  padding: 20px; }
+  .left-column .profile img {
+    width: 100%;
+    border-radius: 50%; }
+  .left-column .profile h2 {
+    margin-top: 20px; }
+  .left-column .profile p {
+    margin-top: 10px; }
+  .left-column .address h2, .left-column .contact h2, .left-column .languages h2 {
+    margin-top: 20px; }
+  .left-column .address ul, .left-column .contact ul, .left-column .languages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .left-column .address li, .left-column .contact li, .left-column .languages li {
+    margin-bottom: 10px; }
+    .left-column .address li i, .left-column .contact li i, .left-column .languages li i {
+      margin-right: 10px; }
+    .left-column .address li span, .left-column .contact li span, .left-column .languages li span {
+      display: inline-block;
+      width: 100px; }
+    .left-column .address li .progress-bar, .left-column .contact li .progress-bar, .left-column .languages li .progress-bar {
+      background-color: #ccc;
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden; }
+      .left-column .address li .progress-bar .progress, .left-column .contact li .progress-bar .progress, .left-column .languages li .progress-bar .progress {
+        height: 100%;
+        background-color: #4CAF50; }
+  .left-column .address hr, .left-column .contact hr, .left-column .languages hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee; }
+
+.right-column {
+  width: 70%;
+  padding: 20px; }
+  .right-column h1 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 40px;
+    padding: 0; }
+  .right-column .education h2, .right-column .experience h2, .right-column .skills h2 {
+    margin-top: 20px; }
+  .right-column .education ul, .right-column .experience ul, .right-column .skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .right-column .education li, .right-column .experience li, .right-column .skills li {
+    margin-bottom: 30px; }
+    .right-column .education li h3, .right-column .experience li h3, .right-column .skills li h3 {
+      margin-top: 0; }
+    .right-column .education li p, .right-column .experience li p, .right-column .skills li p {
+      margin-top: 5px; }
+    .right-column .education li img, .right-column .experience li img, .right-column .skills li img {
+      max-width: 100%;
+      height: auto;
+      width: 80px; }
+  .right-column .education hr, .right-column .experience hr, .right-column .skills hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee; }
+  .right-column .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .right-column .skills li {
+    margin-right: 2px; }
+    .right-column .skills li:last-child {
+      margin-right: 0; }
+
+@page {
+  size: A4 portrait;
+  margin: 0; }
+body {
+  margin: 0;
+  padding: 0;
+  width: 210mm;
+  height: 297mm;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fff; }
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 40px; }
+
+.wrapper {
+  display: flex;
+  align-items: flex-start; }
+  .wrapper .left-column,
+  .wrapper .right-column {
+    min-height: 900px; }
+
+.timeline {
+  position: relative;
+  padding-left: 20px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 170px;
+    width: 4px;
+    height: 100%;
+    background-color: #000000; }
+  .timeline li {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 230px; }
+    .timeline li::before {
+      content: attr(data-year);
+      position: absolute;
+      top: 15px;
+      line-height: 3;
+      left: 60px;
+      width: 50px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: #4CAF50;
+      color: #000000; }
+    .timeline li h3 {
+      margin-top: 0; }
+
+.education .timeline::before {
+  background-color: #2196F3; }
+.education .timeline li::before {
+  background-color: #2196F3; }
+
+.experience .timeline::before {
+  background-color: #FF9800; }
+.experience .timeline li::before {
+  background-color: #FF9800; }
+
+/*# sourceMappingURL=stylesheet.css.map */

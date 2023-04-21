@@ -1,0 +1,15 @@
+// Estilos de flexbox
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+// Efecto hover para enlaces
+@mixin link-hover {
+    &:hover {
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
